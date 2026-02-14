@@ -6,12 +6,15 @@
     <title>Una Carta Estrellada</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700&display=swap');
+        /* Añadimos una fuente manuscrita para la firma */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
         :root {
             --vg-blue-dark: #1a2b4c;
             --vg-blue-light: #2c5ea8;
             --vg-yellow: #f4d03f;
             --vg-orange: #e67e22;
+            --vg-green: #27ae60;
             --vg-cream: #fcf3cf;
             --paper-texture: #fffdf5;
         }
@@ -221,6 +224,17 @@
             text-indent: 2rem; 
         }
 
+        /* Estilo de la firma */
+        .signature {
+            text-align: right;
+            font-family: 'Dancing Script', cursive; /* Fuente manuscrita */
+            font-size: 1.5rem;
+            color: var(--vg-blue-dark);
+            margin-top: 25px;
+            margin-right: 10px;
+            opacity: 0.9;
+        }
+
         .interaction-area {
             margin-top: auto;
             text-align: center;
@@ -388,7 +402,7 @@
 
             <div class="letter-body">
                 <p>
-                    He conocido a un excéntrico y nostálgico pintor al que le faltaba una oreja, me mencionó que hace poco había terminado un extenso viaje en barco, y que se había cansado de conversar con las olas del mar, entonces, nos sentamos un momento a pasar el tiempo y conversamos como si de amigos antiguos se tratasen.
+                    He conocido a un excéntrico y nostálgico pintor al que le faltaba una oreja. Me mencionó que hace poco había terminado un extenso viaje en barco, y que se había cansado de conversar con las olas del mar. Nos sentamos un momento a pasar el tiempo y conversamos como si de amigos antiguos se tratasen.
                 </p>
 
                 <div class="photo-placeholder">
@@ -396,7 +410,7 @@
                 </div>
 
                 <p>
-                    Mientras charlábamos empezó a garabatear una servilleta, es que el no podía dejar las manos quietas aunque lo intentase me explico, y miemtras dibujaba con todo su corazon, me contaba sobre su fascinación inherente por el color amarillo, y me hablaba de girasoles y estrellas... Terminando le conté sobre mi fascinación, le hablé sobre ti...
+                    Mientras charlábamos empezó a garabatear una servilleta, es que no podía dejar las manos quietas aunque lo intentase, y me contaba su fascinación inherente por el color amarillo, y me hablaba de girasoles y estrellas... Terminando le conté sobre mi fascinación, le hablé sobre ti...
                 </p>
 
                 <div class="photo-placeholder">
@@ -406,6 +420,10 @@
                 <p>
                     Juntos llegamos a la conclusión de que ambos adoramos el arte, él en sus girasoles amarillos y yo en ti, mi fascinación...
                 </p>
+
+                <div class="signature">
+                    Con amor, I.M.
+                </div>
             </div>
 
             <div class="interaction-area">
